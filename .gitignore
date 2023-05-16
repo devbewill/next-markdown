@@ -5,8 +5,12 @@
 /build
 
 # Generated files
-.docusaurus
-.cache-loader
+
+.env
+.now
+.next
+node_modules/
+out/
 
 # Misc
 .DS_Store
