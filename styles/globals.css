@@ -5,9 +5,11 @@
 * {
   box-sizing: inherit;
 }
+
 html {
   box-sizing: border-box;
   overflow-y: scroll;
+  font-family: var(--inter-font);
 }
 body {
   margin: 0;
@@ -17,6 +19,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+h1 {
+  /* font-family: var(--leagueGothic-font); */
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -65,7 +72,6 @@ fieldset {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
 }
 pre {
   margin-left: 0;
@@ -184,4 +190,8 @@ p {
   letter-spacing: -0.5px;
   line-height: 1.5;
   color: #464646;
+}
+
+.accordion__input:checked ~ .accordion__content {
+  display: block;
 }
