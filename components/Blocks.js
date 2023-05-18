@@ -1,5 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
+import { Disclosure } from "@headlessui/react";
+import { ChevronRightIcon } from "@heroicons/react/20/solid";
 
 export default function Blocks() {
   return (

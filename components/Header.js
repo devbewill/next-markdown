@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Disclosure } from "@headlessui/react";
 
 const Navbar = () => {
-  const navigation = ["Product", "Features", "Pricing", "Company", "Blog"];
+  const navigation = ["About", "Faq", "Docs", "Privacy"];
 
   return (
     <div className="w-full">
@@ -57,7 +57,7 @@ const Navbar = () => {
                       href="/"
                       className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5"
                     >
-                      Get Started
+                      login
                     </Link>
                   </>
                 </Disclosure.Panel>
@@ -87,7 +87,7 @@ const Navbar = () => {
             href="/"
             className="px-6 py-2 text-white bg-indigo-600 rounded-md md:ml-5"
           >
-            Get Started
+            Login
           </Link>
         </div>
       </nav>
