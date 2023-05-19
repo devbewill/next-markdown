@@ -11,7 +11,7 @@ export default function Askyourself() {
         height="100"
         className="mx-auto py-2"
       />
-      <h3 className="text-black font-bold">ASK YOURSELF IF</h3>
+      <h3 className="text-black font-bold p-4">ASK YOURSELF IF</h3>
       <div className="flex flex-wrap flex-col md:flex-row items-start my-5 md:my-10">
         <div className="item h-full md:w-1/3">
           <div className=" m-5  p-4 border-black border-2 border-l-0 border-b-0 font-bold ">

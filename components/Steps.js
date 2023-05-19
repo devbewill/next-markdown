@@ -12,7 +12,7 @@ export default function Steps() {
         className="absolute right-0 -top-1"
       />
       <span className="text-mangrovia"></span>
-      <h2 className="font-black text-5xl">How it works</h2>
+      <h2 className="font-black text-5xl px-4">How it works</h2>
 
       <div className="flex flex-wrap flex-col md:flex-row items-start my-12 md:my-24">
         <div className="item h-full md:w-1/2">

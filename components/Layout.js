@@ -4,13 +4,7 @@ import styles from "../styles/Layout.module.css";
 
 export default function Layout(props) {
   return (
-    <section
-      className="flex-col"
-      style={{
-        backgroundColor: `${props.bgColor && props.bgColor}`,
-        color: props.pathname === "info" ? "white" : undefined,
-      }}
-    >
+    <section className="flex-col">
       <Meta
         siteTitle={props.siteTitle}
         siteDescription={props.siteDescription}
