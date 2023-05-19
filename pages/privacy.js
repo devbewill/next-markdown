@@ -2,7 +2,7 @@ import Layout from "../components/Layout";
 import Image from "next/image";
 import Footer from "../components/Footer";
 
-export default function Info({ frontmatter, markdownBody, title }) {
+export default function Privacy({ frontmatter, markdownBody, title }) {
   return (
     <Layout>
       <div className="overflow-hidden flex items-center bg-slate-100 pt-60 pb-28">

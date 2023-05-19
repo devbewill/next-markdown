@@ -7,7 +7,7 @@ const Accordion = () => {
   return (
     <Container className="!p-0">
       <div className="w-full max-w-2xl p-2 mx-auto">
-        {faqdata.map((item, index) => (
+        {accordionData.map((item, index) => (
           <div key={item.question} className="mb-5">
             <Disclosure>
               {({ open }) => (
@@ -42,7 +42,7 @@ const Accordion = () => {
   );
 };
 
-const faqdata = [
+const accordionData = [
   {
     question: "Safeguard data integrity",
     answer:
