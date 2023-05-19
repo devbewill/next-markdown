@@ -5,7 +5,7 @@ import { ChevronRightIcon } from "@heroicons/react/20/solid";
 
 export default function Blocks() {
   return (
-    <section className="container mx-auto flex flex-col md:flex-row items-start my-12 md:my-24 ">
+    <section className="container mx-auto flex flex-col md:flex-row lg:gap-40 items-start my-12 md:my-24 ">
       <div className="content h-full w-full lg:w-1/2">
         <Image
           src="/blocks.png"

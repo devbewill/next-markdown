@@ -29,10 +29,10 @@ export default function Hero() {
             of the blockchain.
           </p>
           <div className="flex my-5">
-            <button className="inline-block bg-black  text-white hover:text-white  ">
+            <button className="inline-block bg-black  text-white hover:text-white hover:bg-gray-700   transition-colors">
               Try now for free
             </button>
-            <button className="inline-block hover:bg-gray-900  text-gray-900 ">
+            <button className="inline-block hover:text-gray-700  text-gray-900 transition-colors">
               Book a demo
             </button>
           </div>

@@ -10,6 +10,7 @@ import Steps from "../components/Steps";
 import QuoteTwo from "../components/QuoteTwo";
 import Benefits from "../components/Benefits";
 import Footer from "../components/Footer";
+import Personas from "../components/Personas";
 
 const Index = (props) => {
   return (
@@ -26,6 +27,7 @@ const Index = (props) => {
       <Steps></Steps>
       <QuoteTwo></QuoteTwo>
       <Benefits></Benefits>
+      <Personas></Personas>
 
       <section>{/* <BlogList allBlogs={props.allBlogs} /> */}</section>
       <Footer></Footer>

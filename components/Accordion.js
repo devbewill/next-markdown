@@ -1,6 +1,6 @@
 import React from "react";
 import Container from "./Container";
-import { Disclosure } from "@headlessui/react";
+import { Disclosure, Transition } from "@headlessui/react";
 import { ChevronUpIcon } from "@heroicons/react/24/solid";
 
 const Accordion = () => {
@@ -12,17 +12,26 @@ const Accordion = () => {
             <Disclosure>
               {({ open }) => (
                 <>
-                  <Disclosure.Button className="flex items-center justify-between w-full px-4 py-6 text-lg text-left  hover:text-mangrovia border-0 border-b-2">
-                    <span>{item.question}</span>
+                  <Disclosure.Button className="flex items-center justify-between w-full px-4 py-6 text-left  hover:text-mangrovia border-0 border-b-2">
+                    <span className="text-2xl">{item.question}</span>
                     <ChevronUpIcon
                       className={`${
                         open ? "transform rotate-180" : ""
                       } w-6 h-6 text-mangrovia`}
                     />
                   </Disclosure.Button>
-                  <Disclosure.Panel className="px-4 pt-4 pb-2">
-                    {item.answer}
-                  </Disclosure.Panel>
+                  <Transition
+                    enter="transition duration-300 ease-out"
+                    enterFrom="transform scale-95 opacity-0"
+                    enterTo="transform scale-100 opacity-100"
+                    leave="transition duration-200 ease-out"
+                    leaveFrom="transform scale-100 opacity-100"
+                    leaveTo="transform scale-95 opacity-0"
+                  >
+                    <Disclosure.Panel className="px-4 pt-4 pb-2">
+                      {item.answer}
+                    </Disclosure.Panel>
+                  </Transition>
                 </>
               )}
             </Disclosure>
