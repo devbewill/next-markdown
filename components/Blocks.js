@@ -5,26 +5,33 @@ import { ChevronRightIcon } from "@heroicons/react/20/solid";
 
 export default function Blocks() {
   return (
-    <section className="container mx-auto flex flex-col md:flex-row items-start my-12 md:my-24">
-      <div className="relative min-h-[300px] p-4 lg:w-1/2 h-full">
+    <section className="container mx-auto flex flex-col md:flex-row items-start my-12 md:my-24 ">
+      <div className="content h-full  lg:w-1/2">
         <Image
           src="/blocks.png"
-          alt="block"
-          fill
-          style={{ objectFit: "contain" }}
+          height={400}
+          width={500}
+          alt=""
+          style={{
+            width: "70%",
+            height: "auto",
+          }}
         />
       </div>
       <div className="content h-full p-4 lg:w-1/2">
-        <p>The reliability on your data and processes is a critical issue.</p>
-        <p>
-          The door is often left open to potential errors, manipulations and
-          procedural anomalies.
+        <p className="font-bold">
+          Datome combines blockchain technology, data management, and business
+          process management.
         </p>
         <p>
-          A questionable reliability, or an actual wrong processing, may lead to
-          incorrect decision-making, loss of margins or even third-party claims.
-          With usual methods, ensuring trust in your data and processes by all
-          stakeholders is either not possible or complex and expensive.
+          This perfect mix of technologies is crucial to create a robust, secure
+          and scalable Platform As A Service that you can easily configure in
+          self provisioning.
+        </p>
+        <p>
+          Datome lets you have a trustworthy database that can embed your
+          processes and connect to your users, legacy applications and existing
+          BPM or DM.
         </p>
       </div>
     </section>

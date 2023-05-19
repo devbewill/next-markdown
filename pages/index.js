@@ -1,6 +1,6 @@
 import matter from "gray-matter";
 import Layout from "../components/Layout";
-import BlogList from "../components/BlogList";
+// import BlogList from "../components/BlogList";
 import Hero from "../components/Hero";
 import Context from "../components/Context";
 import Askyourself from "../components/AskYourself";
@@ -9,6 +9,7 @@ import Blocks from "../components/Blocks";
 import Steps from "../components/Steps";
 import QuoteTwo from "../components/QuoteTwo";
 import Benefits from "../components/Benefits";
+import Footer from "../components/Footer";
 
 const Index = (props) => {
   return (
@@ -27,6 +28,7 @@ const Index = (props) => {
       <Benefits></Benefits>
 
       <section>{/* <BlogList allBlogs={props.allBlogs} /> */}</section>
+      <Footer></Footer>
     </Layout>
   );
 };
