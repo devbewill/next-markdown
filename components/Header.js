@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Disclosure } from "@headlessui/react";
 
 const Navbar = () => {
-  const navigation = ["About", "Faq", "Docs", "Privacy"];
+  const navigation = ["About", "Faq", "Docs"];
 
   return (
     <div className="fixed top-0 left-0 right-0 bg-slate-100 z-20">
@@ -19,7 +19,7 @@ const Navbar = () => {
 
                 <Disclosure.Button
                   aria-label="Toggle Menu"
-                  className="px-2 py-1 ml-auto  text-gray-500 rounded-md lg:hidden z-10"
+                  className="px-2 py-1 ml-auto  text-gray-500  lg:hidden z-10"
                 >
                   <svg
                     className="w-6 h-6 fill-current"
@@ -54,7 +54,7 @@ const Navbar = () => {
                       </Link>
                     ))}
                     <Link
-                      href="/"
+                      href="https://trial.datome.io/auth/login/"
                       className="w-full px-6 py-2 mt-3 text-center text-white bg-mangrovia rounded-md lg:ml-5"
                     >
                       login
@@ -88,17 +88,10 @@ const Navbar = () => {
             <li className="mr-3 nav__item">
               <Link
                 href="https://doc.datome.io/"
+                target="_blank"
                 className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-gray-800"
               >
                 Docs
-              </Link>
-            </li>
-            <li className="mr-3 nav__item">
-              <Link
-                href="/privacy"
-                className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-gray-800"
-              >
-                Privacy
               </Link>
             </li>
           </ul>
@@ -106,7 +99,7 @@ const Navbar = () => {
 
         <div className="hidden mr-3 space-x-4 lg:flex nav__item">
           <Link
-            href="/"
+            href="https://trial.datome.io/auth/login/"
             className="px-5 py-2 font-bold text-white bg-mangrovia"
           >
             Login

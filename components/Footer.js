@@ -4,7 +4,6 @@ import React from "react";
 import Container from "./Container";
 
 export default function Footer() {
-  const navigation = ["Home", "About", "Faq", "Docs", "Privacy Policy"];
   return (
     <div className="relative bg-slate-100">
       <Container>
@@ -38,15 +37,50 @@ export default function Footer() {
 
           <div>
             <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
-              {navigation.map((item, index) => (
-                <Link
-                  key={index}
-                  href="/"
-                  className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700"
-                >
-                  {item}
-                </Link>
-              ))}
+              <ul className="">
+                <li className="mr-3 nav__item">
+                  <Link
+                    href="/"
+                    className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-gray-800"
+                  >
+                    Home
+                  </Link>
+                </li>
+                <li className="mr-3 nav__item">
+                  <Link
+                    href="/about"
+                    className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-gray-800"
+                  >
+                    About
+                  </Link>
+                </li>
+                <li className="mr-3 nav__item">
+                  <Link
+                    href="/faq"
+                    className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-gray-800"
+                  >
+                    Faq
+                  </Link>
+                </li>
+                <li className="mr-3 nav__item">
+                  <Link
+                    href="https://doc.datome.io/"
+                    target="_blank"
+                    className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-gray-800"
+                  >
+                    Docs
+                  </Link>
+                </li>
+                <li className="mr-3 nav__item">
+                  <Link
+                    href="/privacy"
+                    target="_blank"
+                    className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-gray-800"
+                  >
+                    Privacy Policy
+                  </Link>
+                </li>
+              </ul>
             </div>
           </div>
           <div className="flex flex-col">

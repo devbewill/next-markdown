@@ -12,6 +12,7 @@ html {
   overflow-y: scroll;
   font-family: var(--inter-font);
 }
+
 body {
   margin: 0;
   overflow-x: hidden;
