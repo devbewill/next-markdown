@@ -3,110 +3,95 @@ import Image from "next/image";
 import { Disclosure } from "@headlessui/react";
 
 const Navbar = () => {
-  const navigation = ["About", "Faq", "Docs"];
-
   return (
-    <div className="fixed top-0 left-0 right-0 bg-slate-100 z-20">
-      <nav className="container  lg:bg-transparent relative flex flex-wrap items-center justify-between p-4 mx-auto lg:justify-between xl:px-0 ">
-        {/* Logo  */}
-        <Disclosure>
-          {({ open }) => (
-            <>
-              <div className="flex flex-wrap items-center justify-between w-full lg:w-auto">
-                <Link href="/">
-                  <Image src="/logo.svg" alt="logo" width="150" height="100" />
-                </Link>
-
-                <Disclosure.Button
-                  aria-label="Toggle Menu"
-                  className="px-2 py-1 ml-auto  text-gray-500  lg:hidden z-10"
-                >
-                  <svg
-                    className="w-6 h-6 fill-current"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                  >
-                    {open && (
-                      <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"
-                      />
-                    )}
-                    {!open && (
-                      <path
-                        fillRule="evenodd"
-                        d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
-                      />
-                    )}
-                  </svg>
-                </Disclosure.Button>
-
-                <Disclosure.Panel className="flex flex-wrap w-screen my-5 top-10 lg:hidden">
-                  <>
-                    {navigation.map((item, index) => (
-                      <Link
-                        key={index}
-                        href="/"
-                        className="w-full px-4 py-2 -ml-4"
-                      >
-                        {item}
-                      </Link>
-                    ))}
-                    <Link
-                      href="https://trial.datome.io/auth/login/"
-                      className="w-full px-6 py-2 mt-3 text-center text-white bg-mangrovia rounded-md lg:ml-5"
-                    >
-                      login
-                    </Link>
-                  </>
-                </Disclosure.Panel>
-              </div>
-            </>
-          )}
-        </Disclosure>
-
-        {/* menu  */}
-        <div className="hidden text-center lg:flex lg:items-center">
-          <ul className="items-center justify-end flex-1 pt-6 list-none lg:pt-0 lg:flex">
-            <li className="mr-3 nav__item">
-              <Link
-                href="/about"
-                className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-gray-800"
+    <header>
+      <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
+        <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+          <a href="/" class="flex items-center">
+            <img
+              src="./logo-black.svg"
+              class="mr-01 h-6 sm:h-10 fill-black"
+              alt="datome Logo"
+            />
+            <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
+              datome
+            </span>
+          </a>
+          <div class="flex items-center lg:order-2">
+            <a
+              href="#"
+              class="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-3xl text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
+            >
+              Login
+            </a>
+            <button
+              data-collapse-toggle="mobile-menu-2"
+              type="button"
+              class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              aria-controls="mobile-menu-2"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                About
-              </Link>
-            </li>
-            <li className="mr-3 nav__item">
-              <Link
-                href="/faq"
-                className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-gray-800"
+                <path
+                  fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <svg
+                class="hidden w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                Faq
-              </Link>
-            </li>
-            <li className="mr-3 nav__item">
-              <Link
-                href="https://doc.datome.io/"
-                target="_blank"
-                className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-gray-800"
-              >
-                Docs
-              </Link>
-            </li>
-          </ul>
-        </div>
-
-        <div className="hidden mr-3 space-x-4 lg:flex nav__item">
-          <Link
-            href="https://trial.datome.io/auth/login/"
-            className="px-5 py-2 font-bold text-white bg-mangrovia"
+                <path
+                  fill-rule="evenodd"
+                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div
+            class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
+            id="mobile-menu-2"
           >
-            Login
-          </Link>
+            <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                >
+                  About
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                >
+                  FAQ
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                >
+                  Docs
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
-    </div>
+    </header>
   );
 };
 

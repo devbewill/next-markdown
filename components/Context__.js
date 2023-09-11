@@ -1,11 +1,11 @@
 export default function Context() {
   return (
-    <section className="py-8 px-4 max-w-screen-xl lg:py-16 lg:px-0 mx-auto flex flex-col md:flex-row items-start">
-      <div className="title h-full py-4 lg:w-1/2">
-        <span className="block py-4">WHY NOW</span>
-        <h2 className="font-black text-4xl">The context</h2>
+    <section className="container  mx-auto flex flex-col md:flex-row items-start py-20 md:my-24">
+      <div className="title h-full p-4 lg:w-1/2">
+        <span className="text-mangrovia">WHY NOW</span>
+        <h2 className="font-black text-5xl">The context</h2>
       </div>
-      <div className="content h-full py-4 lg:w-1/2 lg:text-xl">
+      <div className="content h-full p-4 lg:w-1/2">
         <p className="font-bold">
           The reliability on your data and processes is a critical issue.
         </p>

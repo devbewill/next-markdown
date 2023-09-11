@@ -1,5 +1,6 @@
 import matter from "gray-matter";
 import Layout from "../components/Layout";
+import IntroOne from "../components/IntroOne";
 import BlogList from "../components/BlogList";
 import Hero from "../components/Hero";
 import Context from "../components/Context";
@@ -21,6 +22,7 @@ const Index = (props) => {
       siteDescription={props.description}
     >
       <Hero></Hero>
+      <IntroOne></IntroOne>
       <Context></Context>
       <Askyourself></Askyourself>
       <QuoteOne></QuoteOne>

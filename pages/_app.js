@@ -1,4 +1,4 @@
-import { League_Gothic, Inter } from "@next/font/google";
+import { League_Gothic, Inter, Albert_Sans } from "@next/font/google";
 import "../styles/globals.css";
 
 // importing the Work Sans font with
@@ -7,7 +7,8 @@ import "../styles/globals.css";
 const leagueGothic = League_Gothic({
   subsets: ["latin"],
 });
-const inter = Inter({ subsets: ["latin"], variable: "--inter-font" });
+const inter = Inter({ subsets: ["latin"] });
+const albertSans = Albert_Sans({ subsets: ["latin"] });
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -16,6 +17,7 @@ function MyApp({ Component, pageProps }) {
         :root {
           --leagueGothic-font: ${leagueGothic.style.fontFamily};
           --inter-font: ${inter.style.fontFamily};
+          --albertSans-font: ${albertSans.style.fontFamily};
         }
       `}</style>
       <Component {...pageProps} />

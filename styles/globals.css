@@ -17,7 +17,7 @@ body {
   margin: 0;
   overflow-x: hidden;
   color: #000;
-  font-size: 16px;
+  font-size: 18px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -36,50 +36,39 @@ p {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
   color: inherit;
   text-rendering: optimizeLegibility;
 }
 
 h1,
-h2 {
-  font-weight: 500;
+h2,
+h3 {
+  line-height: 0.8;
+  font-family: var(--albertSans-font);
+  font-weight: 700;
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 3rem;
   letter-spacing: -1px;
-  line-height: 1.1875;
 }
 
 h2 {
   font-size: 1.7rem;
-  letter-spacing: -0.75px;
-  line-height: 1.2;
 }
 
 h3 {
   font-size: 1.2rem;
-  letter-spacing: -0.5px;
-  line-height: 1.1875;
   color: #a0a0a0;
   font-weight: normal;
-}
-
-p {
-  font-size: 1.2rem;
-  letter-spacing: -0.5px;
-  line-height: 1.5;
-  color: #464646;
 }
 
 button {
   border: 0;
   font-weight: 700;
-  line-height: 2;
-  padding: 0.5em 1em;
-  border: 2px solid black;
-  margin-right: 0.5em;
+  padding: 1em;
+  font-size: 1.1rem;
+  text-transform: uppercase;
 }
 
 .accordion__input:checked ~ .accordion__content {
