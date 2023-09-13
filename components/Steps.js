@@ -3,67 +3,132 @@ import Image from "next/image";
 
 export default function Steps() {
   return (
-    <section className="relative container mx-auto py-40">
-      <Image
-        src="/gradient3.svg"
-        alt="item"
-        width="200"
-        height="200"
-        className="absolute right-0 -top-1"
-      />
-      <span className="text-mangrovia"></span>
-      <h2 className="font-black text-5xl px-4">How it works</h2>
-
-      <div className="flex flex-wrap flex-col md:flex-row items-start my-12 md:my-24">
-        <div className="item h-full md:w-1/2">
-          <div className=" m-5 p-4 ">
-            <h2 className="font-bold text-4xl ">
-              <span className="text-mangrovia">1.</span>Create
-            </h2>
-            <p>
-              Create digital models Use our APIs to define an asset (e.g. a
-              physical object, a ticket, a set of data) and then design the
-              possible states it can pass though.
-            </p>
-          </div>
-        </div>
-        <div className="item h-full md:w-1/2">
-          <div className=" m-5  p-4 ">
-            <h2 className="font-bold text-4xl">
-              <span className="text-mangrovia">2.</span>Set
-            </h2>
-            <p>
-              Set rules, relations and privileges Define who has the right to
-              change a state, write/read data and under what circumstances.
-            </p>
-          </div>
-        </div>
-        <div className="item h-full md:w-1/2">
-          <div className=" m-5 p-4 ">
-            <h2 className="font-bold text-4xl">
-              <span className="text-mangrovia">3.</span>Connect
-            </h2>
-            <p>
-              Connect legacy applications Use our APIs to connect your existing
-              systems or any third party.
-            </p>
-          </div>
-        </div>
-        <div className="item h-full md:w-1/2">
-          <div className=" m-5 p-4 ">
-            <h2 className="font-bold text-4xl">
-              <span className="text-mangrovia">4.</span>Certify
-            </h2>
-            <p>
-              Certify each run Get your assets certified, tacked and automated
-              effortlessly on your private blockchain. You can share a public
-              page showing the history of each asset that run through the Datome
-              process. The public page can be tailored with your own editorial
-              content.
-            </p>
-          </div>
-        </div>
+    <section className="py-8 px-4 max-w-screen-xl lg:py-16 lg:px-0 mx-auto">
+      <div className="title h-full py-4 lg:w-1/2">
+        <span className="block py-4 uppercase">how magic happens</span>
+        <h2 className="font-black text-4xl">How it works</h2>
       </div>
+      <div class="grid gap-8 items-center py-8 mx-auto max-w-screen-xl xl:gap-16 justify-items-center  md:grid-cols-2">
+        <div class="mt-4 md:mt-0 lg:order-last">
+          <h2 class="mb-4 text-3xl tracking-tight  text-gray-900 dark:text-white">
+            Models
+          </h2>
+          <p class="font-light text-gray-500 lg:text-xl dark:text-gray-400">
+            Datome works by allowing you to define the general abstraction of
+            the asset you want to track, which we call a Model. A Model is a
+            JSON scheme that describes the properties, statuses and relations of
+            an asset.
+          </p>
+        </div>
+        <Image
+          src="/howworks/how1.png"
+          alt="item"
+          width="400"
+          height="200"
+          className=""
+        />
+      </div>
+      {/* separator */}
+      <div class="grid gap-8 items-center py-8  mx-auto max-w-screen-xl xl:gap-16 justify-items-center md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+        <div class="mt-4 md:mt-0">
+          <h2 class="mb-4 text-3xl tracking-tight  text-gray-900 dark:text-white">
+            Relations
+          </h2>
+          <p class=" font-light text-gray-500 lg:text-xl dark:text-gray-400">
+            For example, you can define a Model for a drug pill, a drug blister
+            and a drug packaging, and how they are related to each other.
+          </p>
+        </div>
+        <Image
+          src="/howworks/how2.png"
+          alt="item"
+          width="400"
+          height="200"
+          className=""
+        />
+      </div>
+      {/* separator */}
+      <div class="grid gap-8 items-center py-8 mx-auto max-w-screen-xl xl:gap-16 justify-items-center md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+        <div class="mt-4 md:mt-0 lg:order-last">
+          <h2 class="mb-4 text-3xl tracking-tight  text-gray-900 dark:text-white">
+            Mutations
+          </h2>
+          <p class=" font-light text-gray-500 lg:text-xl dark:text-gray-400">
+            Each Model also defines the rules and conditions for creating and
+            updating an asset, as well as the privileges required for different
+            users.
+          </p>
+        </div>
+        <Image
+          src="/howworks/how3.png"
+          alt="item"
+          width="400"
+          height="200"
+          className=""
+        />
+      </div>
+      {/* separator */}
+      <div class="grid gap-8 items-center py-8 mx-auto max-w-screen-xl xl:gap-16 justify-items-center md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+        <div class="mt-4 md:mt-0">
+          <h2 class="mb-4 text-3xl tracking-tight  text-gray-900 dark:text-white">
+            Groups
+          </h2>
+          <p class="mb-6 font-light text-gray-500 lg:text-xl dark:text-gray-400">
+            Users lives in a groups and can be legacy applications, human
+            beings, IoT devices or even external organizations. For example, you
+            can specify that only a certified manufacturer can create a drug
+            pill, and only a licensed pharmacist can update its status to sold.
+          </p>
+        </div>
+        <Image
+          src="/howworks/how4.png"
+          alt="item"
+          width="400"
+          height="200"
+          className=""
+        />
+      </div>
+      {/* separator */}
+      <div class="grid gap-8 items-center py-8  mx-auto max-w-screen-xl xl:gap-16 justify-items-center md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+        <div class=" mt-4 md:mt-0 lg:order-last">
+          <h2 class="mb-4 text-3xl tracking-tight  text-gray-900 dark:text-white">
+            Assets
+          </h2>
+          <p class=" font-light text-gray-500 lg:text-xl dark:text-gray-400">
+            Once you have defined your Models, you can start creating assets and
+            having them go through the designed flow.
+          </p>
+        </div>
+        <Image
+          src="/howworks/how5.png"
+          alt="item"
+          width="400"
+          height="200"
+          className=""
+        />
+      </div>
+      {/* separator */}
+      <div class="grid gap-8 items-center py-8 mx-auto max-w-screen-xl xl:gap-16 justify-items-center md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+        <div class="mt-4 md:mt-0">
+          <h2 class="mb-4 text-3xl tracking-tight  text-gray-900 dark:text-white">
+            Details
+          </h2>
+          <p class="font-light text-gray-500 lg:text-xl dark:text-gray-400">
+            For each asset, you get a customizable public web page that
+            certifies the history of the changes and the rules that were
+            followed. This way, you can ensure the transparency and
+            accountability of your assets.
+          </p>
+        </div>
+        <Image
+          src="/howworks/how6.png"
+          alt="item"
+          width="500"
+          height="200"
+          className=""
+        />
+      </div>
+      {/* separator */}
     </section>
   );
 }

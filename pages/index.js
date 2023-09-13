@@ -5,7 +5,6 @@ import BlogList from "../components/BlogList";
 import Hero from "../components/Hero";
 import Context from "../components/Context";
 import Askyourself from "../components/AskYourself";
-import QuoteOne from "../components/QuoteOne";
 import Blocks from "../components/Blocks";
 import Steps from "../components/Steps";
 import QuoteTwo from "../components/QuoteTwo";
@@ -25,14 +24,14 @@ const Index = (props) => {
       <IntroOne></IntroOne>
       <Context></Context>
       <Askyourself></Askyourself>
-      <QuoteOne></QuoteOne>
-      <Blocks></Blocks>
       <Steps></Steps>
-      <QuoteTwo></QuoteTwo>
+      {/* <Blocks></Blocks> */}
+
+      {/* <QuoteTwo></QuoteTwo> */}
       <Benefits></Benefits>
       <Personas></Personas>
 
-      <BlogList allBlogs={props.allBlogs} />
+      {/* <BlogList allBlogs={props.allBlogs} /> */}
       <Form></Form>
       <Footer></Footer>
     </Layout>
