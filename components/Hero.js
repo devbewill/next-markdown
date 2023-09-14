@@ -4,15 +4,37 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <section class="bg-white dark:bg-gray-900">
-      <div class="pt-20 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-0">
-        <h1 class="mb-10 lg:max-w-screen-lg mr-0 ml-auto  font-extrabold uppercase tracking-tight leading-none text-gray-900 lg:text-right text-3xl lg:text-hero dark:text-white">
+      <div class=" pt-10 px-4 mx-auto max-w-screen-xl lg:px-0">
+        <a
+          href="#"
+          class=" inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700"
+          role="alert"
+        >
+          <span class="text-xs bg-pink-500 rounded-full text-white px-4 py-1.5 mr-3">
+            New
+          </span>{" "}
+          <span class="text-sm font-medium">Ready for Digital Passport</span>
+          <svg
+            class="ml-2 w-5 h-5"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </a>
+        <h1 class="mb-10  mr-0 ml-auto  font-extrabold uppercase tracking-tight leading-none text-gray-900 lg:text-right text-2xl lg:text-hero dark:text-white">
           <span class="block lg:text-right text-gray-300">datome</span>
-          Embed trust in your data and processes
+          Unlock Real-Time Process Control with Blockchain
         </h1>
         <p class="mb-14 lg:mb-1 lg:text-xl lg:max-w-screen-md text-gray-500 dark:text-gray-400 lg:leading-8">
-          Bring intelligence into data and flows to get a more efficient and
-          safe IT ecosystem. Leverage in self-provisioning the real benefits of
-          the blockchain.
+          Datome brings transparency, traceability, and regulatory compliance to
+          your enterprise operations, all without requiring a background in
+          blockchain technology.
         </p>
         <div class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-end sm:space-y-0 sm:space-x-4">
           <a

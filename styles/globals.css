@@ -43,7 +43,7 @@ p {
 h1,
 h2,
 h3 {
-  line-height: 0.8;
+  line-height: 1.1;
   font-family: var(--albertSans-font);
   font-weight: 700;
 }
@@ -59,7 +59,6 @@ h2 {
 
 h3 {
   font-size: 1.2rem;
-  color: #a0a0a0;
   font-weight: normal;
 }
 
